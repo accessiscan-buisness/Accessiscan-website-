@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4WFLBFXTE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag(\'js\', new Date());
+
+      gtag(\'config\', \'G-Y4WFLBFXTE\');
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -30,8 +41,8 @@
     <meta property="twitter:image" content="https://accessiscan.com/twitter-image.jpg">
     
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%237c3aed'/><path d='M50 20L30 40h40L50 20z' fill='white'/><rect x='35' y='45' width='30' height='30' fill='white'/></svg>">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%237c3aed'/><path d='M50 20L30 40h40L50 20z' fill='white'/><rect x='35' y='45' width='30' height='30' fill='white'/></svg>">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%237c3aed\'/><path d=\'M50 20L30 40h40L50 20z\' fill=\'white\'/><rect x=\'35\' y=\'45\' width=\'30\' height=\'30\' fill=\'white\'/></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%237c3aed\'/><path d=\'M50 20L30 40h40L50 20z\' fill=\'white\'/><rect x=\'35\' y=\'45\' width=\'30\' height=\'30\' fill=\'white\'/></svg>">
     
     <!-- Preload Critical Resources -->
     <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
@@ -42,16 +53,6 @@
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N80XV4QR0F"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-N80XV4QR0F');
-    </script>
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -407,45 +408,11 @@
     </style>
 </head>
 <body class="gradient-bg min-h-screen">
-    <!-- Cookie Consent Banner -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50 transform translate-y-full transition-transform duration-300">
-        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between">
-            <p class="text-sm mb-2 sm:mb-0">We use cookies to enhance your experience and analyze our traffic. <a href="#privacy" class="underline">Learn more</a></p>
-            <div class="flex space-x-2">
-                <button onclick="acceptCookies()" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded text-sm">Accept</button>
-                <button onclick="declineCookies()" class="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm">Decline</button>
-            </div>
-        </div>
-    </div>
 
-    <!-- Social Proof Popup -->
-    <div id="social-proof-popup" class="social-proof-popup">
-        <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                <i data-lucide="check" class="h-5 w-5 text-white"></i>
-            </div>
-            <div>
-                <p class="font-semibold text-gray-800">Someone just signed up!</p>
-                <p class="text-sm text-gray-600">Join 500+ protected businesses</p>
-            </div>
-        </div>
-    </div>
 
-    <!-- Exit Intent Popup -->
-    <div id="exit-intent-overlay" class="exit-intent-overlay">
-        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Wait! Don't Leave Unprotected</h3>
-            <p class="text-gray-600 mb-6">Get 50% off your first month and protect your business from ADA lawsuits today!</p>
-            <div class="urgency-timer mb-6">
-                <div>This offer expires in:</div>
-                <div id="exit-timer" class="text-xl font-bold">05:00</div>
-            </div>
-            <button onclick="claimDiscount()" class="btn-primary w-full py-3 px-6 rounded-lg font-semibold mb-4">
-                Claim 50% Discount Now
-            </button>
-            <button onclick="closeExitIntent()" class="text-gray-500 text-sm">No thanks, I'll risk a lawsuit</button>
-        </div>
-    </div>
+
+
+
 
     <!-- Header -->
     <header class="glass sticky top-0 z-40">
@@ -459,7 +426,7 @@
                 <a href="#pricing" class="text-white/90 hover:text-white transition-colors">Pricing</a>
                 <a href="#testimonials" class="text-white/90 hover:text-white transition-colors">Reviews</a>
                 <a href="#faq" class="text-white/90 hover:text-white transition-colors">FAQ</a>
-                <button onclick="startFreeTrial()" class="btn-secondary px-6 py-2 rounded-lg font-medium">
+                <button onclick="gtag(\'event\', \'start_free_trial_click\', { \'event_category\': \'engagement\', \'event_label\': \'header_button\' }); startFreeTrial();" class="btn-secondary px-6 py-2 rounded-lg font-medium">
                     Start Free Trial
                 </button>
             </div>
@@ -492,7 +459,7 @@
             </div>
             
             <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Don't Be the Next
+                Don\'t Be the Next
                 <span class="text-yellow-300"> ADA Lawsuit</span>
             </h1>
             
@@ -507,1481 +474,439 @@
                     SOC 2 Compliant
                 </div>
                 <div class="trust-badge">
-                    <i data-lucide="award" class="h-4 w-4 mr-2"></i>
-                    WCAG 2.1 Certified
-                </div>
-                <div class="trust-badge">
                     <i data-lucide="lock" class="h-4 w-4 mr-2"></i>
-                    Bank-Level Security
+                    SSL Secured
                 </div>
                 <div class="trust-badge">
-                    <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                    24/7 Support
+                    <i data-lucide="award" class="h-4 w-4 mr-2"></i>
+                    WCAG 2.1 AA
                 </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <button onclick="startFreeTrial()" class="btn-primary text-lg px-8 py-4 rounded-lg font-semibold inline-flex items-center justify-center">
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+                <button onclick="gtag(\'event\', \'start_free_trial_click\', { \'event_category\': \'engagement\', \'event_label\': \'hero_button\' }); startFreeTrial();" class="btn-primary px-8 py-3 rounded-lg text-lg font-semibold shadow-lg">
                     Start Free 14-Day Trial
-                    <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
                 </button>
-                <button onclick="watchDemo()" class="btn-secondary text-lg px-8 py-4 rounded-lg font-semibold inline-flex items-center justify-center">
-                    <i data-lucide="play" class="mr-2 h-5 w-5"></i>
-                    Watch Demo (2 min)
+                <button onclick="gtag(\'event\', \'watch_demo_click\', { \'event_category\': \'engagement\', \'event_label\': \'hero_button\' }); openModal(\'videoModal\');" class="btn-secondary px-8 py-3 rounded-lg text-lg font-semibold">
+                    <i data-lucide="play-circle" class="h-5 w-5 mr-2"></i>
+                    Watch Demo
                 </button>
             </div>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-sm text-white/80">
-                <div class="flex items-center">
-                    <i data-lucide="check-circle" class="h-4 w-4 mr-2 text-green-400"></i>
-                    No Credit Card Required
-                </div>
-                <div class="flex items-center">
-                    <i data-lucide="check-circle" class="h-4 w-4 mr-2 text-green-400"></i>
-                    Setup in 2 Minutes
-                </div>
-                <div class="flex items-center">
-                    <i data-lucide="check-circle" class="h-4 w-4 mr-2 text-green-400"></i>
-                    30-Day Money Back Guarantee
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Live Demo Section -->
-    <section class="container mx-auto px-4 py-16">
-        <div class="max-w-2xl mx-auto bg-white/95 backdrop-blur-sm shadow-2xl rounded-2xl p-8">
-            <div class="text-center mb-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">
-                    Try AccessiScan Free - Scan Your Website Now
-                </h2>
-                <p class="text-lg text-gray-600">
-                    Get instant accessibility compliance report in 30 seconds
-                </p>
-            </div>
-            
-            <div class="space-y-4">
-                <div>
-                    <label for="url" class="block text-base font-medium text-gray-700 mb-2">Website URL</label>
-                    <input
-                        id="url"
-                        type="url"
-                        placeholder="https://yourwebsite.com"
-                        class="w-full text-lg py-3 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                        aria-describedby="url-help"
-                    />
-                    <p id="url-help" class="text-sm text-gray-500 mt-1">Enter your website URL to scan for accessibility issues</p>
-                    <div id="url-error" class="text-red-600 text-sm mt-1 hidden"></div>
-                </div>
-                <button 
-                    id="scan-btn"
-                    class="w-full bg-purple-600 hover:bg-purple-700 text-white text-lg py-3 px-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center"
-                    aria-describedby="scan-help"
-                >
-                    <i data-lucide="zap" class="mr-2 h-5 w-5"></i>
-                    Scan for Accessibility Issues
-                </button>
-                <p id="scan-help" class="text-center text-sm text-gray-600">
-                    Join <span id="customer-count" class="counter font-semibold">487</span>+ businesses protecting themselves from ADA lawsuits
-                </p>
-                
-                <!-- Progress bar for scanning -->
-                <div id="scan-progress" class="hidden">
-                    <div class="progress-bar">
-                        <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
-                    </div>
-                    <p class="text-center text-sm text-gray-600 mt-2">Analyzing your website...</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof Stats -->
-    <section class="glass py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-                <div class="fade-in-up">
-                    <div class="text-4xl font-bold text-yellow-300 mb-2">96%</div>
-                    <div class="text-white/80">Websites Fail Compliance</div>
-                </div>
-                <div class="fade-in-up">
-                    <div class="text-4xl font-bold text-yellow-300 mb-2">$15K</div>
-                    <div class="text-white/80">Average Lawsuit Cost</div>
-                </div>
-                <div class="fade-in-up">
-                    <div class="text-4xl font-bold text-yellow-300 mb-2">8,800+</div>
-                    <div class="text-white/80">Lawsuits in 2024</div>
-                </div>
-                <div class="fade-in-up">
-                    <div class="text-4xl font-bold text-yellow-300 mb-2 counter" id="stat-counter">487+</div>
-                    <div class="text-white/80">Protected Businesses</div>
-                </div>
-            </div>
+            <p class="text-sm text-white/70">
+                No credit card required. Cancel anytime.
+            </p>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="container mx-auto px-4 py-16">
-        <div class="text-center mb-16 fade-in-up">
-            <h2 class="text-4xl font-bold text-white mb-4">
-                Why Choose AccessiScan?
-            </h2>
-            <p class="text-xl text-white/80 max-w-2xl mx-auto">
-                Built on axe-core, the industry-standard accessibility testing engine trusted by millions of developers worldwide
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-            <div class="glass text-white rounded-2xl p-8 card-hover fade-in-up">
-                <i data-lucide="zap" class="h-12 w-12 text-yellow-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-4">Fast & Accurate</h3>
-                <p class="text-white/80 mb-4">
-                    Powered by axe-core, finds 57% of accessibility issues automatically. Complete scans in under 30 seconds.
-                </p>
-                <ul class="text-sm text-white/70 space-y-1">
-                    <li>• Automated WCAG 2.1 testing</li>
-                    <li>• Real-time issue detection</li>
-                    <li>• Comprehensive coverage</li>
-                </ul>
+    <section id="features" class="container mx-auto px-4 py-16 text-white">
+        <h2 class="text-4xl font-bold text-center mb-12 fade-in-up">Why Choose AccessiScan?</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-xl text-center card-hover fade-in-up">
+                <i data-lucide="scan" class="h-12 w-12 text-yellow-300 mx-auto mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-4">Automated Scanning</h3>
+                <p class="text-white/80">Our AI-powered scanner automatically identifies WCAG 2.1 violations on your website, saving you countless hours.</p>
             </div>
-
-            <div class="glass text-white rounded-2xl p-8 card-hover fade-in-up">
-                <i data-lucide="bar-chart-3" class="h-12 w-12 text-blue-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-4">Detailed Reports</h3>
-                <p class="text-white/80 mb-4">
-                    Get comprehensive reports with specific issues, impact levels, and step-by-step remediation guidance.
-                </p>
-                <ul class="text-sm text-white/70 space-y-1">
-                    <li>• Priority-based issue ranking</li>
-                    <li>• Code-level recommendations</li>
-                    <li>• Progress tracking</li>
-                </ul>
+            <div class="glass p-8 rounded-xl text-center card-hover fade-in-up" style="animation-delay: 0.1s;">
+                <i data-lucide="gavel" class="h-12 w-12 text-yellow-300 mx-auto mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-4">ADA Lawsuit Protection</h3>
+                <p class="text-white/80">Proactively fix issues and generate compliance reports to defend against costly ADA accessibility lawsuits.</p>
             </div>
-
-            <div class="glass text-white rounded-2xl p-8 card-hover fade-in-up">
-                <i data-lucide="shield" class="h-12 w-12 text-green-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-4">Legal Protection</h3>
-                <p class="text-white/80 mb-4">
-                    Ensure compliance with ADA, WCAG 2.1, and Section 508 requirements to avoid costly lawsuits.
-                </p>
-                <ul class="text-sm text-white/70 space-y-1">
-                    <li>• ADA compliance certification</li>
-                    <li>• Legal documentation</li>
-                    <li>• Expert support</li>
-                </ul>
+            <div class="glass p-8 rounded-xl text-center card-hover fade-in-up" style="animation-delay: 0.2s;">
+                <i data-lucide="shield-check" class="h-12 w-12 text-yellow-300 mx-auto mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-4">WCAG 2.1 Compliance</h3>
+                <p class="text-white/80">Ensures your website meets the latest Web Content Accessibility Guidelines (WCAG) 2.1 AA standards.</p>
+            </div>
+            <div class="glass p-8 rounded-xl text-center card-hover fade-in-up" style="animation-delay: 0.3s;">
+                <i data-lucide="file-text" class="h-12 w-12 text-yellow-300 mx-auto mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-4">Detailed Reports</h3>
+                <p class="text-white/80">Get easy-to-understand reports with actionable steps to achieve full compliance.</p>
+            </div>
+            <div class="glass p-8 rounded-xl text-center card-hover fade-in-up" style="animation-delay: 0.4s;">
+                <i data-lucide="users" class="h-12 w-12 text-yellow-300 mx-auto mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-4">User-Friendly Interface</h3>
+                <p class="text-white/80">Designed for businesses of all sizes, our platform is intuitive and requires no technical expertise.</p>
+            </div>
+            <div class="glass p-8 rounded-xl text-center card-hover fade-in-up" style="animation-delay: 0.5s;">
+                <i data-lucide="globe" class="h-12 w-12 text-yellow-300 mx-auto mb-4"></i>
+                <h3 class="text-2xl font-semibold mb-4">Global Standards</h3>
+                <p class="text-white/80">Complies with international accessibility standards, making your website accessible worldwide.</p>
             </div>
         </div>
+    </section>
 
-        <!-- Comparison Table -->
-        <div class="glass rounded-2xl p-8 fade-in-up">
-            <h3 class="text-2xl font-bold text-white text-center mb-8">AccessiScan vs Competitors</h3>
-            <div class="overflow-x-auto">
-                <table class="w-full text-white">
-                    <thead>
-                        <tr class="border-b border-white/20">
-                            <th class="text-left py-3">Feature</th>
-                            <th class="text-center py-3 text-yellow-300">AccessiScan</th>
-                            <th class="text-center py-3">Competitor A</th>
-                            <th class="text-center py-3">Competitor B</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm">
-                        <tr class="border-b border-white/10">
-                            <td class="py-3">Automated Scanning</td>
-                            <td class="text-center py-3"><i data-lucide="check" class="h-4 w-4 text-green-400 mx-auto"></i></td>
-                            <td class="text-center py-3"><i data-lucide="check" class="h-4 w-4 text-green-400 mx-auto"></i></td>
-                            <td class="text-center py-3"><i data-lucide="x" class="h-4 w-4 text-red-400 mx-auto"></i></td>
-                        </tr>
-                        <tr class="border-b border-white/10">
-                            <td class="py-3">Real-time Monitoring</td>
-                            <td class="text-center py-3"><i data-lucide="check" class="h-4 w-4 text-green-400 mx-auto"></i></td>
-                            <td class="text-center py-3"><i data-lucide="x" class="h-4 w-4 text-red-400 mx-auto"></i></td>
-                            <td class="text-center py-3"><i data-lucide="x" class="h-4 w-4 text-red-400 mx-auto"></i></td>
-                        </tr>
-                        <tr class="border-b border-white/10">
-                            <td class="py-3">Legal Documentation</td>
-                            <td class="text-center py-3"><i data-lucide="check" class="h-4 w-4 text-green-400 mx-auto"></i></td>
-                            <td class="text-center py-3"><i data-lucide="check" class="h-4 w-4 text-green-400 mx-auto"></i></td>
-                            <td class="text-center py-3"><i data-lucide="x" class="h-4 w-4 text-red-400 mx-auto"></i></td>
-                        </tr>
-                        <tr class="border-b border-white/10">
-                            <td class="py-3">Starting Price</td>
-                            <td class="text-center py-3 text-yellow-300 font-bold">$29/mo</td>
-                            <td class="text-center py-3">$99/mo</td>
-                            <td class="text-center py-3">$149/mo</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="container mx-auto px-4 py-16 text-white">
+        <h2 class="text-4xl font-bold text-center mb-12 fade-in-up">How AccessiScan Works</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="text-center fade-in-up">
+                <div class="relative flex items-center justify-center w-24 h-24 bg-yellow-300 text-purple-800 rounded-full mx-auto mb-6 text-4xl font-bold shadow-xl">
+                    1
+                </div>
+                <h3 class="text-2xl font-semibold mb-4">Enter Your URL</h3>
+                <p class="text-white/80">Simply paste your website address into our scanner.</p>
+            </div>
+            <div class="text-center fade-in-up" style="animation-delay: 0.1s;">
+                <div class="relative flex items-center justify-center w-24 h-24 bg-yellow-300 text-purple-800 rounded-full mx-auto mb-6 text-4xl font-bold shadow-xl">
+                    2
+                </div>
+                <h3 class="text-2xl font-semibold mb-4">Scan & Analyze</h3>
+                <p class="text-white/80">Our AI engine rapidly scans your site for hundreds of accessibility violations.</p>
+            </div>
+            <div class="text-center fade-in-up" style="animation-delay: 0.2s;">
+                <div class="relative flex items-center justify-center w-24 h-24 bg-yellow-300 text-purple-800 rounded-full mx-auto mb-6 text-4xl font-bold shadow-xl">
+                    3
+                </div>
+                <h3 class="text-2xl font-semibold mb-4">Get Your Report</h3>
+                <p class="text-white/80">Receive a detailed report with actionable steps to achieve full compliance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Scan Your Website) -->
+    <section class="container mx-auto px-4 py-16 text-center text-white">
+        <h2 class="text-4xl font-bold mb-8 fade-in-up">Ready to Scan Your Website?</h2>
+        <p class="text-xl mb-8 text-white/90 fade-in-up">
+            Enter your website URL below to get an instant accessibility scan and identify potential ADA compliance issues.
+        </p>
+        <div class="max-w-2xl mx-auto flex flex-col sm:flex-row gap-4 fade-in-up">
+            <input type="url" placeholder="https://yourwebsite.com" class="flex-grow p-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-yellow-300" aria-label="Website URL input">
+            <button onclick="gtag(\'event\', \'scan_for_issues_click\', { \'event_category\': \'engagement\', \'event_label\': \'cta_button\' }); alert(\'Scanning functionality is for demo purposes. Please sign up for a free trial to use the full scanner.\');" class="btn-primary px-8 py-4 rounded-lg text-lg font-semibold shadow-lg whitespace-nowrap">
+                Scan for Accessibility Issues
+            </button>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="container mx-auto px-4 py-16 text-white">
+        <h2 class="text-4xl font-bold text-center mb-12 fade-in-up">Simple & Transparent Pricing</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <!-- Basic Plan -->
+            <div class="glass p-8 rounded-xl text-center card-hover fade-in-up">
+                <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+                <p class="text-white/80 mb-6">Perfect for small businesses & startups</p>
+                <div class="text-5xl font-bold mb-6">
+                    $29<span class="text-xl font-normal">/month</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8">
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>1 Website Scan</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Monthly Reports</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Email Support</li>
+                    <li class="flex items-center text-white/60"><i data-lucide="x-circle" class="h-5 w-5 mr-2"></i>Advanced Analytics</li>
+                    <li class="flex items-center text-white/60"><i data-lucide="x-circle" class="h-5 w-5 mr-2"></i>Priority Support</li>
+                </ul>
+                <button onclick="gtag(\'event\', \'select_plan_click\', { \'event_category\': \'ecommerce\', \'event_label\': \'basic_plan\', \'value\': 29 }); startFreeTrial();" class="btn-secondary w-full px-6 py-3 rounded-lg font-medium">
+                    Start Free Trial
+                </button>
+            </div>
+
+            <!-- Pro Plan (Popular) -->
+            <div class="glass p-8 rounded-xl text-center pricing-popular fade-in-up" style="animation-delay: 0.1s;">
+                <div class="inline-block bg-yellow-300 text-purple-800 text-xs font-bold px-3 py-1 rounded-full mb-4">MOST POPULAR</div>
+                <h3 class="text-2xl font-semibold mb-4">Pro</h3>
+                <p class="text-white/80 mb-6">Ideal for growing businesses & agencies</p>
+                <div class="text-5xl font-bold mb-6">
+                    $79<span class="text-xl font-normal">/month</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8">
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Up to 5 Website Scans</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Weekly Reports</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Advanced Analytics</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Priority Email Support</li>
+                    <li class="flex items-center text-white/60"><i data-lucide="x-circle" class="h-5 w-5 mr-2"></i>Dedicated Account Manager</li>
+                </ul>
+                <button onclick="gtag(\'event\', \'select_plan_click\', { \'event_category\': \'ecommerce\', \'event_label\': \'pro_plan\', \'value\': 79 }); startFreeTrial();" class="btn-primary w-full px-6 py-3 rounded-lg font-medium">
+                    Start Free Trial
+                </button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="glass p-8 rounded-xl text-center card-hover fade-in-up" style="animation-delay: 0.2s;">
+                <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
+                <p class="text-white/80 mb-6">Custom solutions for large organizations</p>
+                <div class="text-5xl font-bold mb-6">
+                    Custom<span class="text-xl font-normal">/month</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8">
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Unlimited Website Scans</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Real-time Monitoring</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>Dedicated Account Manager</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>API Access</li>
+                    <li class="flex items-center"><i data-lucide="check-circle" class="h-5 w-5 text-yellow-300 mr-2"></i>On-site Training</li>
+                </ul>
+                <button onclick="gtag(\'event\', \'select_plan_click\', { \'event_category\': \'ecommerce\', \'event_label\': \'enterprise_plan\', \'value\': 0 }); openModal(\'contactModal\');" class="btn-secondary w-full px-6 py-3 rounded-lg font-medium">
+                    Contact Us
+                </button>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="bg-white/5 backdrop-blur-md py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in-up">
-                <h2 class="text-4xl font-bold text-white mb-4">
-                    Trusted by 500+ Businesses
-                </h2>
-                <p class="text-xl text-white/80">
-                    See how AccessiScan has protected businesses from lawsuits and expanded their reach
+    <section id="testimonials" class="container mx-auto px-4 py-16 text-white">
+        <h2 class="text-4xl font-bold text-center mb-12 fade-in-up">What Our Clients Say</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-xl card-hover fade-in-up">
+                <div class="flex items-center mb-4">
+                    <img src="https://via.placeholder.com/60" alt="Client 1" class="w-16 h-16 rounded-full mr-4 border-2 border-yellow-300">
+                    <div>
+                        <p class="font-semibold text-lg">Sarah Chen</p>
+                        <p class="text-white/70">CEO, Tech Solutions Inc.</p>
+                    </div>
+                </div>
+                <p class="text-white/90 leading-relaxed">
+                    "AccessiScan saved us from a potential lawsuit. Their automated scanner is incredibly accurate, and the reports are easy to understand. Highly recommend!"
                 </p>
             </div>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="glass text-white rounded-2xl p-8 card-hover fade-in-up">
-                    <div class="flex items-center space-x-1 mb-4">
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                    </div>
-                    <p class="text-white/80 text-base mb-6">
-                        "AccessiScan saved us from a potential $15,000 lawsuit. The automated scanning caught issues our developers missed. ROI was immediate."
-                    </p>
-                    <div class="flex items-center space-x-3">
-                        <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-bold">
-                            SC
-                        </div>
-                        <div>
-                            <div class="font-semibold">Sarah Chen</div>
-                            <div class="text-sm text-white/60">CEO, TechStart Solutions</div>
-                        </div>
+            <div class="glass p-8 rounded-xl card-hover fade-in-up" style="animation-delay: 0.1s;">
+                <div class="flex items-center mb-4">
+                    <img src="https://via.placeholder.com/60" alt="Client 2" class="w-16 h-16 rounded-full mr-4 border-2 border-yellow-300">
+                    <div>
+                        <p class="font-semibold text-lg">David Lee</p>
+                        <p class="text-white/70">Marketing Director, Global Brands</p>
                     </div>
                 </div>
-
-                <div class="glass text-white rounded-2xl p-8 card-hover fade-in-up">
-                    <div class="flex items-center space-x-1 mb-4">
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                    </div>
-                    <p class="text-white/80 text-base mb-6">
-                        "We've avoided 3 ADA lawsuits since implementing AccessiScan. It's essential for any business with a website. Best investment we made."
-                    </p>
-                    <div class="flex items-center space-x-3">
-                        <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center text-white font-bold">
-                            MR
-                        </div>
-                        <div>
-                            <div class="font-semibold">Mike Rodriguez</div>
-                            <div class="text-sm text-white/60">Managing Partner, Rodriguez Law Firm</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass text-white rounded-2xl p-8 card-hover fade-in-up">
-                    <div class="flex items-center space-x-1 mb-4">
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                        <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                    </div>
-                    <p class="text-white/80 text-base mb-6">
-                        "Our website traffic increased 28% after fixing accessibility issues. AccessiScan pays for itself and opened new markets."
-                    </p>
-                    <div class="flex items-center space-x-3">
-                        <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex items-center justify-center text-white font-bold">
-                            JW
-                        </div>
-                        <div>
-                            <div class="font-semibold">Jennifer Walsh</div>
-                            <div class="text-sm text-white/60">Marketing Director, E-Commerce Plus</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Customer Logos -->
-            <div class="text-center fade-in-up">
-                <p class="text-white/60 mb-8">Trusted by leading companies</p>
-                <div class="flex flex-wrap justify-center items-center space-x-8 opacity-60">
-                    <div class="bg-white/10 px-6 py-3 rounded-lg m-2">TechStart</div>
-                    <div class="bg-white/10 px-6 py-3 rounded-lg m-2">Rodriguez Law</div>
-                    <div class="bg-white/10 px-6 py-3 rounded-lg m-2">E-Commerce Plus</div>
-                    <div class="bg-white/10 px-6 py-3 rounded-lg m-2">Digital Agency</div>
-                    <div class="bg-white/10 px-6 py-3 rounded-lg m-2">Restaurant Group</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="container mx-auto px-4 py-16">
-        <div class="text-center mb-16 fade-in-up">
-            <h2 class="text-4xl font-bold text-white mb-4">
-                Simple, Transparent Pricing
-            </h2>
-            <p class="text-xl text-white/80 mb-8">
-                Choose the plan that fits your business. All plans include 14-day free trial and 30-day money-back guarantee.
-            </p>
-            <div class="inline-flex items-center bg-green-500/20 text-green-100 border border-green-400/30 rounded-full px-4 py-2">
-                <i data-lucide="dollar-sign" class="h-4 w-4 mr-2"></i>
-                Save 20% with Annual Billing
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-            <!-- Starter Plan -->
-            <div class="glass text-white rounded-2xl p-8 card-hover fade-in-up">
-                <div class="text-center mb-6">
-                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
-                    <p class="text-white/80 mb-4">Perfect for small businesses</p>
-                    <div class="mb-4">
-                        <span class="text-4xl font-bold">$29</span>
-                        <span class="text-lg text-white/80">/month</span>
-                    </div>
-                    <div class="text-sm text-white/60">
-                        <span class="line-through">$49/month</span> - Save 41%
-                    </div>
-                </div>
-                
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Scan up to 5 pages</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Monthly compliance reports</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Email support</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Basic remediation guidance</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">30-day money back guarantee</span>
-                    </li>
-                </ul>
-                
-                <button onclick="selectPlan('starter')" class="w-full btn-secondary py-3 px-4 rounded-lg font-semibold">
-                    Start Free Trial
-                </button>
-                <p class="text-xs text-white/60 text-center mt-2">No credit card required</p>
-            </div>
-
-            <!-- Professional Plan (Popular) -->
-            <div class="bg-white text-gray-800 rounded-2xl p-8 card-hover fade-in-up pricing-popular relative">
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black px-4 py-1 rounded-full text-sm font-semibold">
-                    Most Popular - Save $600/year
-                </div>
-                
-                <div class="text-center mb-6">
-                    <h3 class="text-2xl font-bold mb-2">Professional</h3>
-                    <p class="text-gray-600 mb-4">Most popular for growing businesses</p>
-                    <div class="mb-4">
-                        <span class="text-4xl font-bold">$99</span>
-                        <span class="text-lg text-gray-600">/month</span>
-                    </div>
-                    <div class="text-sm text-gray-500">
-                        <span class="line-through">$149/month</span> - Save 33%
-                    </div>
-                </div>
-                
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-600"></i>
-                        <span class="text-gray-700">Unlimited page scanning</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-600"></i>
-                        <span class="text-gray-700">Weekly automated scans</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-600"></i>
-                        <span class="text-gray-700">Priority support (24/7)</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-600"></i>
-                        <span class="text-gray-700">Detailed remediation guides</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-600"></i>
-                        <span class="text-gray-700">API access</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-600"></i>
-                        <span class="text-gray-700">Compliance certificates</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-600"></i>
-                        <span class="text-gray-700">Legal documentation</span>
-                    </li>
-                </ul>
-                
-                <button onclick="selectPlan('professional')" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300">
-                    Start Free Trial
-                </button>
-                <p class="text-xs text-gray-500 text-center mt-2">Most popular choice</p>
-            </div>
-
-            <!-- Agency Plan -->
-            <div class="glass text-white rounded-2xl p-8 card-hover fade-in-up">
-                <div class="text-center mb-6">
-                    <h3 class="text-2xl font-bold mb-2">Agency</h3>
-                    <p class="text-white/80 mb-4">White-label solution for agencies</p>
-                    <div class="mb-4">
-                        <span class="text-4xl font-bold">$299</span>
-                        <span class="text-lg text-white/80">/month</span>
-                    </div>
-                    <div class="text-sm text-white/60">
-                        <span class="line-through">$499/month</span> - Save 40%
-                    </div>
-                </div>
-                
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Multiple client sites</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">White-label dashboard</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Daily monitoring</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Custom branding</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Dedicated account manager</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i data-lucide="check-circle" class="h-4 w-4 mr-3 text-green-400"></i>
-                        <span class="text-white/90">Partner revenue sharing (30%)</span>
-                    </li>
-                </ul>
-                
-                <button onclick="selectPlan('agency')" class="w-full btn-secondary py-3 px-4 rounded-lg font-semibold">
-                    Start Free Trial
-                </button>
-                <p class="text-xs text-white/60 text-center mt-2">Perfect for agencies</p>
-            </div>
-        </div>
-
-        <!-- Money Back Guarantee -->
-        <div class="text-center fade-in-up mb-12">
-            <div class="inline-flex items-center bg-green-500/20 text-green-100 border border-green-400/30 rounded-full px-6 py-3">
-                <i data-lucide="shield-check" class="h-5 w-5 mr-2"></i>
-                30-Day Money Back Guarantee - No Questions Asked
-            </div>
-        </div>
-
-        <div class="text-center fade-in-up">
-            <p class="text-white/80 mb-4">
-                Need a custom solution for enterprise? 
-            </p>
-            <button onclick="contactSales()" class="btn-secondary px-6 py-3 rounded-lg font-semibold">
-                Contact Sales for Enterprise Pricing
-            </button>
-        </div>
-    </section>
-
-    <!-- Urgency Section -->
-    <section class="bg-red-600/20 backdrop-blur-md py-16 border-y border-red-400/30">
-        <div class="container mx-auto px-4 text-center fade-in-up">
-            <div class="max-w-4xl mx-auto">
-                <i data-lucide="alert-triangle" class="h-16 w-16 text-red-400 mx-auto mb-6"></i>
-                <h2 class="text-3xl font-bold text-white mb-4">
-                    Don't Wait Until You're Sued
-                </h2>
-                <p class="text-xl text-white/90 mb-8">
-                    ADA lawsuits increased 7% in 2024. The average settlement is $15,000. Protect your business now for less than $100/month.
+                <p class="text-white/90 leading-relaxed">
+                    "We struggled with accessibility for years. AccessiScan made it simple and straightforward. Our website is now fully compliant, and we have peace of mind."
                 </p>
-                
-                <!-- Risk Calculator -->
-                <div class="bg-white/10 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
-                    <h3 class="text-lg font-bold text-white mb-4">Calculate Your Lawsuit Risk</h3>
-                    <div class="grid grid-cols-2 gap-4 text-sm">
-                        <div class="text-white/80">
-                            <strong>High Risk Industries:</strong><br>
-                            Restaurants, Retail, Healthcare, Education
-                        </div>
-                        <div class="text-white/80">
-                            <strong>High Risk States:</strong><br>
-                            California, New York, Florida, Texas
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="startFreeTrial()" class="btn-primary text-lg px-8 py-4 rounded-lg font-semibold">
-                        Protect My Business Now
-                    </button>
-                    <button onclick="calculateRisk()" class="btn-secondary text-lg px-8 py-4 rounded-lg font-semibold">
-                        Calculate My Risk
-                    </button>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="container mx-auto px-4 py-16">
-        <div class="text-center mb-16 fade-in-up">
-            <h2 class="text-4xl font-bold text-white mb-4">
-                Frequently Asked Questions
-            </h2>
-            <p class="text-xl text-white/80">
-                Everything you need to know about website accessibility compliance
-            </p>
-        </div>
-
-        <div class="max-w-4xl mx-auto space-y-6">
-            <div class="glass rounded-2xl p-6 fade-in-up">
-                <button class="faq-question w-full text-left flex justify-between items-center text-white font-semibold text-lg" aria-expanded="false">
-                    What is ADA compliance and why do I need it?
-                    <i data-lucide="chevron-down" class="h-5 w-5 transition-transform duration-300"></i>
-                </button>
-                <div class="faq-answer hidden mt-4 text-white/80">
-                    The Americans with Disabilities Act (ADA) requires websites to be accessible to people with disabilities. Non-compliance can result in lawsuits with settlements averaging $15,000. With 8,800+ lawsuits filed in 2024 alone, it's not a matter of if, but when your business could be targeted.
+    <section id="faq" class="container mx-auto px-4 py-16 text-white">
+        <h2 class="text-4xl font-bold text-center mb-12 fade-in-up">Frequently Asked Questions</h2>
+        
+        <div class="max-w-3xl mx-auto space-y-4">
+            <div class="glass p-6 rounded-xl cursor-pointer faq-item fade-in-up">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-semibold text-lg">What is ADA compliance for websites?</h3>
+                    <i data-lucide="chevron-down" class="h-6 w-6 transition-transform duration-300"></i>
+                </div>
+                <div class="faq-answer mt-4 text-white/80 hidden">
+                    The Americans with Disabilities Act (ADA) requires businesses to provide equal access to individuals with disabilities. For websites, this means ensuring that people with visual, auditory, cognitive, and motor impairments can use and navigate your site effectively.
                 </div>
             </div>
-
-            <div class="glass rounded-2xl p-6 fade-in-up">
-                <button class="faq-question w-full text-left flex justify-between items-center text-white font-semibold text-lg" aria-expanded="false">
-                    How accurate is automated accessibility testing?
-                    <i data-lucide="chevron-down" class="h-5 w-5 transition-transform duration-300"></i>
-                </button>
-                <div class="faq-answer hidden mt-4 text-white/80">
-                    AccessiScan finds approximately 57% of accessibility issues automatically using axe-core, the industry standard. We provide guidance for manual testing to catch the remaining issues. Our comprehensive approach ensures maximum coverage and legal protection.
-                </div>
-            </div>
-
-            <div class="glass rounded-2xl p-6 fade-in-up">
-                <button class="faq-question w-full text-left flex justify-between items-center text-white font-semibold text-lg" aria-expanded="false">
-                    Can I cancel anytime?
-                    <i data-lucide="chevron-down" class="h-5 w-5 transition-transform duration-300"></i>
-                </button>
-                <div class="faq-answer hidden mt-4 text-white/80">
-                    Yes, you can cancel your subscription at any time with no cancellation fees. We also offer a 30-day money-back guarantee if you're not completely satisfied with AccessiScan.
-                </div>
-            </div>
-
-            <div class="glass rounded-2xl p-6 fade-in-up">
-                <button class="faq-question w-full text-left flex justify-between items-center text-white font-semibold text-lg" aria-expanded="false">
-                    What happens if I get sued despite using AccessiScan?
-                    <i data-lucide="chevron-down" class="h-5 w-5 transition-transform duration-300"></i>
-                </button>
-                <div class="faq-answer hidden mt-4 text-white/80">
-                    While no tool can guarantee 100% protection, AccessiScan provides comprehensive documentation of your compliance efforts, which significantly strengthens your legal position. Our Professional and Agency plans include legal documentation that can be used in your defense.
-                </div>
-            </div>
-
-            <div class="glass rounded-2xl p-6 fade-in-up">
-                <button class="faq-question w-full text-left flex justify-between items-center text-white font-semibold text-lg" aria-expanded="false">
-                    How long does it take to scan my website?
-                    <i data-lucide="chevron-down" class="h-5 w-5 transition-transform duration-300"></i>
-                </button>
-                <div class="faq-answer hidden mt-4 text-white/80">
-                    Most scans complete in under 30 seconds. Larger websites may take up to 2 minutes. You'll receive a comprehensive report immediately after the scan completes, with detailed remediation guidance.
-                </div>
-            </div>
-
-            <div class="glass rounded-2xl p-6 fade-in-up">
-                <button class="faq-question w-full text-left flex justify-between items-center text-white font-semibold text-lg" aria-expanded="false">
-                    Do you offer support for fixing issues?
-                    <i data-lucide="chevron-down" class="h-5 w-5 transition-transform duration-300"></i>
-                </button>
-                <div class="faq-answer hidden mt-4 text-white/80">
-                    Yes! All plans include detailed remediation guidance. Professional and Agency plans include priority support with accessibility experts who can help you implement fixes. We also offer done-for-you remediation services for complex issues.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="container mx-auto px-4 py-16 text-center fade-in-up">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-6">
-                Ready to Protect Your Business?
-            </h2>
-            <p class="text-xl text-white/80 mb-8">
-                Join 500+ businesses using AccessiScan to avoid lawsuits and reach more customers. Start your free trial today - no credit card required.
-            </p>
-            
-            <!-- Final urgency timer -->
-            <div class="urgency-timer mb-8 max-w-md mx-auto">
-                <div class="text-sm">Limited Time: 50% Off First Month</div>
-                <div id="final-timer" class="text-xl font-bold">23:59:45</div>
-            </div>
-            
-            <button onclick="startFreeTrial()" class="btn-primary text-xl px-12 py-5 rounded-lg font-semibold mb-4">
-                Start Free 14-Day Trial
-            </button>
-            <p class="text-white/60">
-                Setup takes 2 minutes • Cancel anytime • 30-day money back guarantee • 24/7 support
-            </p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white/5 backdrop-blur-md py-16 border-t border-white/10">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <i data-lucide="shield" class="h-6 w-6 text-white"></i>
-                        <span class="text-xl font-bold text-white">AccessiScan</span>
-                    </div>
-                    <p class="text-white/70 mb-4">
-                        Professional website accessibility compliance scanner. 
-                        Protect your business from ADA lawsuits.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-white/70 hover:text-white transition-colors" aria-label="Twitter">
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
-                        </a>
-                        <a href="#" class="text-white/70 hover:text-white transition-colors" aria-label="LinkedIn">
-                            <i data-lucide="linkedin" class="h-5 w-5"></i>
-                        </a>
-                        <a href="#" class="text-white/70 hover:text-white transition-colors" aria-label="Facebook">
-                            <i data-lucide="facebook" class="h-5 w-5"></i>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Product</h4>
-                    <ul class="space-y-2 text-white/70">
-                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
-                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">API</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Integrations</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Changelog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Resources</h4>
-                    <ul class="space-y-2 text-white/70">
-                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Webinars</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">ADA Guide</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Company</h4>
-                    <ul class="space-y-2 text-white/70">
-                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
-                        <li><a href="mailto:support@accessiscan.com" class="hover:text-white transition-colors">Contact</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Trust badges in footer -->
-            <div class="border-t border-white/10 pt-8 mb-8">
-                <div class="flex flex-wrap justify-center items-center space-x-6">
-                    <div class="trust-badge">
-                        <i data-lucide="shield-check" class="h-4 w-4 mr-2"></i>
-                        SOC 2 Type II
-                    </div>
-                    <div class="trust-badge">
-                        <i data-lucide="lock" class="h-4 w-4 mr-2"></i>
-                        256-bit SSL
-                    </div>
-                    <div class="trust-badge">
-                        <i data-lucide="award" class="h-4 w-4 mr-2"></i>
-                        WCAG 2.1 AA
-                    </div>
-                    <div class="trust-badge">
-                        <i data-lucide="globe" class="h-4 w-4 mr-2"></i>
-                        GDPR Compliant
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-white/10 pt-8 text-center text-white/70">
-                <p>&copy; 2025 AccessiScan. All rights reserved. | Made with ❤️ for a more accessible web.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Demo Video Modal -->
-    <div id="demo-modal" class="modal">
-        <div class="modal-content max-w-4xl">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold text-gray-800">AccessiScan Demo - See How It Works</h3>
-                <button onclick="closeDemoModal()" class="text-gray-500 hover:text-gray-700" aria-label="Close demo">
-                    <i data-lucide="x" class="h-6 w-6"></i>
+            <div class="glass p-6 rounded-xl cursor-pointer faq-item fade-in-up" style="animation-delay: 0.1s;">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-semibold text-lg">How does AccessiScan ensure WCAG 2.1 compliance?</h3>
+                    <i data-lucide="chevron-down" class="h-6 w-6 transition-transform duration-300"></i>
                 </button>
             </div>
             <div class="video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    title="AccessiScan Demo Video" 
-                    frameborder="0" 
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <div class="mt-6 text-center">
-                <p class="text-gray-600 mb-4">Ready to protect your business from ADA lawsuits?</p>
-                <button onclick="startFreeTrial()" class="btn-primary px-8 py-3 rounded-lg font-semibold">
-                    Start Your Free Trial Now
-                </button>
+                <iframe src="https://www.youtube.com/embed/your-video-id?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
-    <!-- Trial Signup Modal -->
-    <div id="trial-modal" class="modal">
-        <div class="modal-content max-w-md">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold text-gray-800">Start Your Free Trial</h3>
-                <button onclick="closeTrialModal()" class="text-gray-500 hover:text-gray-700" aria-label="Close signup">
+    <!-- Contact Us Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content max-w-md w-full">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold text-gray-800">Contact Us</h3>
+                <button onclick="closeModal(\'contactModal\');" class="text-gray-500 hover:text-gray-700">
                     <i data-lucide="x" class="h-6 w-6"></i>
                 </button>
             </div>
-            <form id="trial-form" class="space-y-4">
+            <form class="space-y-4">
                 <div>
-                    <label for="trial-email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-                    <input type="email" id="trial-email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="your@email.com">
-                    <div id="trial-email-error" class="text-red-600 text-sm mt-1 hidden"></div>
-                </div>
-                <div>
-                    <label for="trial-website" class="block text-sm font-medium text-gray-700 mb-2">Your Website URL *</label>
-                    <input type="url" id="trial-website" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="https://yourwebsite.com">
-                    <div id="trial-website-error" class="text-red-600 text-sm mt-1 hidden"></div>
+                    <label for="name" class="block text-gray-700 font-medium mb-1">Name</label>
+                    <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Your Name">
                 </div>
                 <div>
-                    <label for="trial-plan" class="block text-sm font-medium text-gray-700 mb-2">Select Plan</label>
-                    <select id="trial-plan" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
-                        <option value="starter">Starter - $29/month</option>
-                        <option value="professional" selected>Professional - $99/month (Most Popular)</option>
-                        <option value="agency">Agency - $299/month</option>
-                    </select>
-                </div>
-                <div class="flex items-center">
-                    <input type="checkbox" id="trial-terms" required class="mr-2">
-                    <label for="trial-terms" class="text-sm text-gray-600">I agree to the <a href="#" class="text-purple-600 hover:underline">Terms of Service</a> and <a href="#" class="text-purple-600 hover:underline">Privacy Policy</a></label>
-                </div>
-                <button type="submit" id="trial-submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300">
-                    Start 14-Day Free Trial
-                </button>
-                <p class="text-xs text-gray-500 text-center">
-                    No credit card required. Cancel anytime. 30-day money back guarantee.
-                </p>
-            </form>
-        </div>
-    </div>
-
-    <!-- Contact Sales Modal -->
-    <div id="contact-modal" class="modal">
-        <div class="modal-content max-w-md">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold text-gray-800">Contact Sales</h3>
-                <button onclick="closeContactModal()" class="text-gray-500 hover:text-gray-700" aria-label="Close contact form">
-                    <i data-lucide="x" class="h-6 w-6"></i>
-                </button>
-            </div>
-            <form id="contact-form" class="space-y-4">
-                <div>
-                    <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                    <input type="text" id="contact-name" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    <label for="email" class="block text-gray-700 font-medium mb-1">Email</label>
+                    <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="your@example.com">
                 </div>
                 <div>
-                    <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-                    <input type="email" id="contact-email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    <label for="message" class="block text-gray-700 font-medium mb-1">Message</label>
+                    <textarea id="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Your message"></textarea>
                 </div>
-                <div>
-                    <label for="contact-company" class="block text-sm font-medium text-gray-700 mb-2">Company *</label>
-                    <input type="text" id="contact-company" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
-                </div>
-                <div>
-                    <label for="contact-phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                    <input type="tel" id="contact-phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
-                </div>
-                <div>
-                    <label for="contact-message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                    <textarea id="contact-message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Tell us about your needs..."></textarea>
-                </div>
-                <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300">
+                <button type="submit" class="btn-primary w-full px-6 py-3 rounded-lg font-medium">
                     Send Message
                 </button>
-                <p class="text-xs text-gray-500 text-center">
-                    We'll respond within 24 hours
-                </p>
             </form>
         </div>
     </div>
 
-    <!-- Notification Toast -->
-    <div id="notification" class="notification">
-        <div class="flex items-center space-x-3">
-            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                <i data-lucide="check" class="h-4 w-4 text-white"></i>
-            </div>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 flex flex-col sm:flex-row items-center justify-between z-50">
+        <p class="text-sm mb-2 sm:mb-0">This website uses cookies to ensure you get the best experience. By continuing to use this site, you agree to our <a href="#" class="underline">Privacy Policy</a>.</p>
+        <button id="acceptCookies" class="bg-yellow-300 text-gray-900 px-4 py-2 rounded-lg text-sm font-semibold">
+            Accept Cookies
+        </button>
+    </div>
+
+    <!-- Social Proof Popup -->
+    <div id="socialProofPopup" class="social-proof-popup hidden">
+        <div class="flex items-center">
+            <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full mr-3">
             <div>
-                <p id="notification-text" class="font-semibold text-gray-800"></p>
+                <p class="text-sm font-semibold text-gray-800">Someone from New York just started a free trial!</p>
+                <p class="text-xs text-gray-500">2 minutes ago</p>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript -->
+    <!-- Exit Intent Popup -->
+    <div id="exitIntentOverlay" class="exit-intent-overlay">
+        <div class="modal-content text-center max-w-xl">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">Don\'t Leave Yet!</h3>
+            <p class="text-gray-600 mb-6">Claim your exclusive 50% discount on any plan when you sign up today.</p>
+            <button onclick="gtag(\'event\', \'exit_intent_cta_click\', { \'event_category\': \'engagement\', \'event_label\': \'exit_intent_button\' }); startFreeTrial();" class="btn-primary px-8 py-4 rounded-lg text-lg font-semibold shadow-lg">
+                Claim My Discount Now!
+            </button>
+            <button onclick="closeModal(\'exitIntentOverlay\');" class="text-gray-500 hover:text-gray-700 mt-4 block mx-auto">
+                No thanks, I\'ll pay full price
+            </button>
+        </div>
+    </div>
+
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
 
-        // Global variables
-        let customerCount = 487;
-        let exitIntentShown = false;
-        let socialProofTimer;
-        let exitTimer;
-        let finalTimer;
-
-        // Initialize on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            initializeCounters();
-            initializeSocialProof();
-            initializeExitIntent();
-            initializeTimers();
-            showCookieBanner();
-        });
-
         // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        const mobileMenuBtn = document.getElementById(\'mobile-menu-btn\');
+        const mobileMenu = document.getElementById(\'mobile-menu\');
 
-        // FAQ toggle functionality
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                const icon = question.querySelector('[data-lucide="chevron-down"]');
-                const isExpanded = question.getAttribute('aria-expanded') === 'true';
-                
-                // Close all other FAQs
-                faqQuestions.forEach(otherQuestion => {
-                    if (otherQuestion !== question) {
-                        const otherAnswer = otherQuestion.nextElementSibling;
-                        const otherIcon = otherQuestion.querySelector('[data-lucide="chevron-down"]');
-                        otherAnswer.classList.add('hidden');
-                        otherIcon.style.transform = 'rotate(0deg)';
-                        otherQuestion.setAttribute('aria-expanded', 'false');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener(\'click\', () => {
+                mobileMenu.classList.toggle(\'hidden\');
+            });
+        }
+
+        // Modals functionality
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add(\'show\');
+                document.body.style.overflow = \'hidden\'; // Prevent scrolling
+                // Pause YouTube video if it\'s the video modal
+                if (modalId === \'videoModal\') {
+                    const iframe = modal.querySelector(\'iframe\');
+                    if (iframe) {
+                        iframe.contentWindow.postMessage(\'{\"event\":\"command\", \"func\":\"pauseVideo\", \"args\":\"\"}\', \'*\');
                     }
-                });
-                
-                // Toggle current FAQ
-                answer.classList.toggle('hidden');
-                icon.style.transform = answer.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
-                question.setAttribute('aria-expanded', !isExpanded);
+                }
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove(\'show\');
+                document.body.style.overflow = \'auto\'; // Restore scrolling
+                // Stop YouTube video if it\'s the video modal
+                if (modalId === \'videoModal\') {
+                    const iframe = modal.querySelector(\'iframe\');
+                    if (iframe) {
+                        iframe.contentWindow.postMessage(\'{\"event\":\"command\", \"func\":\"stopVideo\", \"args\":\"\"}\', \'*\');
+                    }
+                }
+            }
+        }
+
+        // Close modal on outside click
+        window.addEventListener(\'click\', (event) => {
+            if (event.target.classList.contains(\'modal\')) {
+                closeModal(event.target.id);
+            }
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll(\".faq-item\").forEach(item => {
+            item.addEventListener(\'click\', () => {
+                const answer = item.querySelector(\".faq-answer\");
+                const icon = item.querySelector(\'i[data-lucide="chevron-down"]\');
+                if (answer && icon) {
+                    answer.classList.toggle(\'hidden\');
+                    icon.classList.toggle(\'rotate-180\');
+                    gtag(\'event\', \'faq_toggle\', { \'event_category\': \'engagement\', \'event_label\': item.querySelector(\'h3\').textContent });
+                }
             });
         });
 
-        // Website scanner functionality
-        const scanBtn = document.getElementById('scan-btn');
-        const urlInput = document.getElementById('url');
-        
-        scanBtn.addEventListener('click', async () => {
-            const url = urlInput.value.trim();
-            
-            if (!url) {
-                showError('url-error', 'Please enter a website URL');
-                return;
-            }
-            
-            if (!isValidUrl(url)) {
-                showError('url-error', 'Please enter a valid URL (e.g., https://example.com)');
-                return;
-            }
-            
-            hideError('url-error');
-            startScan();
-            
-            // Track scan event
-            trackEvent('scan_website', {
-                'event_category': 'Engagement',
-                'event_label': 'Free Scan',
-                'url': url
-            });
-        });
+        // Counter animation for hero section
+        const counterElement = document.getElementById(\'lawsuit-counter\');
+        if (counterElement) {
+            let currentCount = 8000;
+            const targetCount = 8800;
+            const duration = 2000; // 2 seconds
+            const increment = (targetCount - currentCount) / (duration / 10);
 
-        // Start scanning process
-        function startScan() {
-            const scanBtn = document.getElementById('scan-btn');
-            const progressContainer = document.getElementById('scan-progress');
-            const progressFill = document.getElementById('progress-fill');
-            
-            // Show progress bar
-            progressContainer.classList.remove('hidden');
-            
-            // Update button state
-            scanBtn.innerHTML = `
-                <i data-lucide="clock" class="mr-2 h-5 w-5 animate-spin"></i>
-                Scanning Your Website...
-            `;
-            scanBtn.disabled = true;
-            
-            // Animate progress bar
-            let progress = 0;
-            const progressInterval = setInterval(() => {
-                progress += Math.random() * 15;
-                if (progress > 90) progress = 90;
-                progressFill.style.width = progress + '%';
-            }, 200);
-            
-            // Complete scan after 3 seconds
+            const updateCounter = () => {
+                if (currentCount < targetCount) {
+                    currentCount += increment;
+                    counterElement.textContent = Math.round(currentCount).toLocaleString() + \'+\';
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counterElement.textContent = targetCount.toLocaleString() + \'+\';
+                }
+            };
+            // Temporarily disable counter animation to avoid interference
+            // updateCounter();
+        }
+
+        // Cookie Consent
+        const cookieConsent = document.getElementById(\'cookieConsent\');
+        const acceptCookies = document.getElementById(\'acceptCookies\');
+
+        if (cookieConsent && acceptCookies) {
+            if (!localStorage.getItem(\'cookiesAccepted\')) {
+                cookieConsent.classList.remove(\'hidden\');
+            }
+
+            acceptCookies.addEventListener(\'click\', () => {
+                localStorage.setItem(\'cookiesAccepted\', \'true\');
+                cookieConsent.classList.add(\'hidden\');
+                gtag(\'event\', \'cookie_consent\', { \'event_category\': \'engagement\', \'event_label\': \'accepted\' });
+            });
+        }
+
+        // Social Proof Popup
+        const socialProofPopup = document.getElementById(\'socialProofPopup\');
+        if (socialProofPopup) {
             setTimeout(() => {
-                clearInterval(progressInterval);
-                progressFill.style.width = '100%';
-                
+                socialProofPopup.classList.remove(\'hidden\');
+                socialProofPopup.classList.add(\'show\');
+                gtag(\'event\', \'social_proof_view\', { \'event_category\': \'engagement\', \'event_label\': \'popup_shown\' });
                 setTimeout(() => {
-                    // Reset UI
-                    scanBtn.innerHTML = `
-                        <i data-lucide="zap" class="mr-2 h-5 w-5"></i>
-                        Scan for Accessibility Issues
-                    `;
-                    scanBtn.disabled = false;
-                    progressContainer.classList.add('hidden');
-                    progressFill.style.width = '0%';
-                    
-                    // Show results
-                    showScanResults(urlInput.value);
-                    
-                    // Re-initialize icons
-                    lucide.createIcons();
-                }, 500);
-            }, 3000);
+                    socialProofPopup.classList.remove(\'show\');
+                    socialProofPopup.classList.add(\'hidden\');
+                }, 5000); // Hide after 5 seconds
+            }, 10000); // Show after 10 seconds
         }
 
-        // URL validation function
-        function isValidUrl(string) {
-            try {
-                new URL(string);
-                return true;
-            } catch (_) {
-                return false;
-            }
-        }
-
-        // Show/hide error messages
-        function showError(elementId, message) {
-            const errorElement = document.getElementById(elementId);
-            errorElement.textContent = message;
-            errorElement.classList.remove('hidden');
-        }
-
-        function hideError(elementId) {
-            const errorElement = document.getElementById(elementId);
-            errorElement.classList.add('hidden');
-        }
-
-        // Show scan results
-        function showScanResults(url) {
-            const results = `
-                <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                    <div class="bg-white rounded-2xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-                        <div class="flex justify-between items-center mb-6">
-                            <h3 class="text-2xl font-bold text-gray-800">Accessibility Scan Results</h3>
-                            <button id="close-results" class="text-gray-500 hover:text-gray-700" aria-label="Close results">
-                                <i data-lucide="x" class="h-6 w-6"></i>
-                            </button>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div class="bg-red-50 border border-red-200 rounded-lg p-4">
-                                <div class="flex items-center mb-2">
-                                    <i data-lucide="alert-triangle" class="h-5 w-5 text-red-500 mr-2"></i>
-                                    <span class="font-semibold text-red-800">7 Critical Issues Found</span>
-                                </div>
-                                <p class="text-red-700 text-sm">Your website has accessibility violations that could trigger ADA lawsuits.</p>
-                            </div>
-                            
-                            <div class="space-y-4">
-                                <div class="border border-gray-200 rounded-lg p-4">
-                                    <h4 class="font-semibold text-gray-800 mb-2">Missing Alt Text on Images</h4>
-                                    <p class="text-gray-600 text-sm mb-2">12 images found without alternative text descriptions.</p>
-                                    <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Critical</span>
-                                </div>
-                                
-                                <div class="border border-gray-200 rounded-lg p-4">
-                                    <h4 class="font-semibold text-gray-800 mb-2">Poor Color Contrast</h4>
-                                    <p class="text-gray-600 text-sm mb-2">5 elements don't meet WCAG contrast requirements.</p>
-                                    <span class="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded">Moderate</span>
-                                </div>
-                                
-                                <div class="border border-gray-200 rounded-lg p-4">
-                                    <h4 class="font-semibold text-gray-800 mb-2">Missing Form Labels</h4>
-                                    <p class="text-gray-600 text-sm mb-2">3 form inputs lack proper accessibility labels.</p>
-                                    <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Critical</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                                <div class="flex items-center mb-2">
-                                    <i data-lucide="alert-triangle" class="h-5 w-5 text-yellow-600 mr-2"></i>
-                                    <span class="font-semibold text-yellow-800">Lawsuit Risk: HIGH</span>
-                                </div>
-                                <p class="text-yellow-700 text-sm">These issues put you at risk for ADA lawsuits. Average settlement: $15,000.</p>
-                            </div>
-                            
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <button onclick="getDetailedReport()" class="btn-primary flex-1 py-3 px-6 rounded-lg font-semibold">
-                                    Get Detailed Report & Fix Guide
-                                </button>
-                                <button onclick="startFreeTrial()" class="btn-secondary flex-1 py-3 px-6 rounded-lg font-semibold">
-                                    Start Free Trial
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-            
-            document.body.insertAdjacentHTML('beforeend', results);
-            
-            // Close results modal
-            document.getElementById('close-results').addEventListener('click', () => {
-                document.querySelector('.fixed.inset-0').remove();
-            });
-            
-            // Re-initialize icons
-            lucide.createIcons();
-        }
-
-        // Button Functions
-        function watchDemo() {
-            document.getElementById('demo-modal').classList.add('show');
-            trackEvent('watch_demo', {
-                'event_category': 'Engagement',
-                'event_label': 'Demo Video'
+        // Exit Intent Popup
+        const exitIntentOverlay = document.getElementById(\'exitIntentOverlay\');
+        if (exitIntentOverlay) {
+            document.addEventListener(\'mouseout\', (e) => {
+                if (e.toElement === null || e.relatedTarget === null) {
+                    if (!sessionStorage.getItem(\'exitIntentShown\')) {
+                        exitIntentOverlay.classList.add(\'show\');
+                        document.body.style.overflow = \'hidden\';
+                        sessionStorage.setItem(\'exitIntentShown\', \'true\');
+                        gtag(\'event\', \'exit_intent_view\', { \'event_category\': \'engagement\', \'event_label\': \'popup_shown\' });
+                    }
+                }
             });
         }
 
-        function closeDemoModal() {
-            document.getElementById('demo-modal').classList.remove('show');
-        }
-
+        // Placeholder for startFreeTrial function (replace with actual signup logic)
         function startFreeTrial() {
-            document.getElementById('trial-modal').classList.add('show');
-            trackEvent('start_trial', {
-                'event_category': 'Conversion',
-                'event_label': 'Free Trial'
-            });
+            alert(\'Redirecting to free trial signup...\');
+            // window.location.href = \'https://app.accessiscan.com/signup\';
         }
 
-        function closeTrialModal() {
-            document.getElementById('trial-modal').classList.remove('show');
-        }
-
-        function selectPlan(plan) {
-            document.getElementById('trial-plan').value = plan;
-            startFreeTrial();
-        }
-
-        function contactSales() {
-            document.getElementById('contact-modal').classList.add('show');
-            trackEvent('contact_sales', {
-                'event_category': 'Lead',
-                'event_label': 'Sales Contact'
-            });
-        }
-
-        function closeContactModal() {
-            document.getElementById('contact-modal').classList.remove('show');
-        }
-
-        function calculateRisk() {
-            const riskMessage = `
-                <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                    <div class="bg-white rounded-2xl p-8 max-w-md w-full">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Your ADA Lawsuit Risk Assessment</h3>
-                        <div class="space-y-4">
-                            <div class="bg-red-50 border border-red-200 rounded-lg p-4">
-                                <div class="font-semibold text-red-800 mb-2">Risk Level: HIGH</div>
-                                <p class="text-red-700 text-sm">Based on current lawsuit trends and website accessibility issues.</p>
-                            </div>
-                            <div class="space-y-2 text-sm text-gray-600">
-                                <div>• 96% of websites fail accessibility compliance</div>
-                                <div>• 8,800+ lawsuits filed in 2024</div>
-                                <div>• Average settlement: $15,000</div>
-                                <div>• Your industry: High risk category</div>
-                            </div>
-                            <button onclick="this.closest('.fixed').remove(); startFreeTrial();" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-semibold">
-                                Protect My Business Now
-                            </button>
-                            <button onclick="this.closest('.fixed').remove();" class="w-full text-gray-500 text-sm">
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            `;
-            
-            document.body.insertAdjacentHTML('beforeend', riskMessage);
-            
-            trackEvent('calculate_risk', {
-                'event_category': 'Engagement',
-                'event_label': 'Risk Calculator'
-            });
-        }
-
-        function getDetailedReport() {
-            // Close scan results
-            const scanResults = document.querySelector('.fixed.inset-0');
-            if (scanResults) scanResults.remove();
-            // Open trial signup
-            startFreeTrial();
-        }
-
-        function claimDiscount() {
-            closeExitIntent();
-            startFreeTrial();
-            showNotification('50% discount applied to your trial!');
-        }
-
-        function closeExitIntent() {
-            document.getElementById('exit-intent-overlay').classList.remove('show');
-            clearInterval(exitTimer);
-        }
-
-        // Form submissions
-        document.getElementById('trial-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = document.getElementById('trial-email').value;
-            const website = document.getElementById('trial-website').value;
-            const plan = document.getElementById('trial-plan').value;
-            const terms = document.getElementById('trial-terms').checked;
-            
-            // Validate form
-            if (!validateEmail(email)) {
-                showError('trial-email-error', 'Please enter a valid email address');
-                return;
-            }
-            
-            if (!isValidUrl(website)) {
-                showError('trial-website-error', 'Please enter a valid website URL');
-                return;
-            }
-            
-            if (!terms) {
-                alert('Please accept the Terms of Service and Privacy Policy');
-                return;
-            }
-            
-            // Hide errors
-            hideError('trial-email-error');
-            hideError('trial-website-error');
-            
-            // Show loading state
-            const submitBtn = document.getElementById('trial-submit');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Creating your trial...';
-            submitBtn.disabled = true;
-            
-            // Simulate API call
-            setTimeout(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-                closeTrialModal();
-                showNotification(`Trial created! Check ${email} for access details.`);
-                
-                // Track conversion
-                trackEvent('trial_signup', {
-                    'event_category': 'Conversion',
-                    'event_label': plan,
-                    'value': plan === 'starter' ? 29 : plan === 'professional' ? 99 : 299
-                });
-            }, 2000);
+        // Ensure Lucide icons are rendered after dynamic content (if any)
+        document.addEventListener(\'DOMContentLoaded\', () => {
+            lucide.createIcons();
         });
 
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('contact-name').value;
-            const email = document.getElementById('contact-email').value;
-            const company = document.getElementById('contact-company').value;
-            
-            // Show loading state
-            const submitBtn = e.target.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            // Simulate API call
-            setTimeout(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-                closeContactModal();
-                showNotification(`Thank you ${name}! We'll contact you within 24 hours.`);
-                
-                // Track lead
-                trackEvent('contact_form', {
-                    'event_category': 'Lead',
-                    'event_label': 'Contact Form'
-                });
-            }, 1500);
-        });
-
-        // Utility functions
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        function showNotification(message) {
-            const notification = document.getElementById('notification');
-            const notificationText = document.getElementById('notification-text');
-            
-            notificationText.textContent = message;
-            notification.classList.add('show');
-            
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 5000);
-        }
-
-        function trackEvent(eventName, parameters) {
-            // Google Analytics tracking
-            if (typeof gtag !== 'undefined') {
-                gtag('event', eventName, parameters);
-            }
-            
-            // Console log for debugging
-            console.log('Event tracked:', eventName, parameters);
-        }
-
-        // Initialize counters
-        function initializeCounters() {
-            const customerCountElement = document.getElementById('customer-count');
-            const statCounterElement = document.getElementById('stat-counter');
-            
-            // Simulate live customer growth
-            setInterval(() => {
-                if (Math.random() < 0.3) {
-                    customerCount += Math.floor(Math.random() * 3) + 1;
-                    customerCountElement.textContent = customerCount.toLocaleString();
-                    statCounterElement.textContent = customerCount + '+';
-                }
-            }, 30000);
-        }
-
-        // Initialize social proof popup
-        function initializeSocialProof() {
-            const popup = document.getElementById('social-proof-popup');
-            
-            function showSocialProof() {
-                popup.classList.add('show');
-                setTimeout(() => {
-                    popup.classList.remove('show');
-                }, 4000);
-            }
-            
-            // Show first popup after 10 seconds
-            setTimeout(showSocialProof, 10000);
-            
-            // Show popup every 45 seconds
-            socialProofTimer = setInterval(showSocialProof, 45000);
-        }
-
-        // Initialize exit intent
-        function initializeExitIntent() {
-            let mouseY = 0;
-            
-            document.addEventListener('mousemove', (e) => {
-                mouseY = e.clientY;
-            });
-            
-            document.addEventListener('mouseleave', (e) => {
-                if (e.clientY <= 0 && !exitIntentShown) {
-                    showExitIntent();
-                }
-            });
-        }
-
-        function showExitIntent() {
-            if (exitIntentShown) return;
-            
-            exitIntentShown = true;
-            document.getElementById('exit-intent-overlay').classList.add('show');
-            
-            // Start countdown timer
-            let timeLeft = 300; // 5 minutes
-            const timerElement = document.getElementById('exit-timer');
-            
-            exitTimer = setInterval(() => {
-                timeLeft--;
-                const minutes = Math.floor(timeLeft / 60);
-                const seconds = timeLeft % 60;
-                timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-                
-                if (timeLeft <= 0) {
-                    clearInterval(exitTimer);
-                    closeExitIntent();
-                }
-            }, 1000);
-            
-            trackEvent('exit_intent_shown', {
-                'event_category': 'Engagement',
-                'event_label': 'Exit Intent Popup'
-            });
-        }
-
-        // Initialize timers
-        function initializeTimers() {
-            // Final CTA timer
-            let finalTimeLeft = 86385; // 23:59:45
-            const finalTimerElement = document.getElementById('final-timer');
-            
-            finalTimer = setInterval(() => {
-                finalTimeLeft--;
-                const hours = Math.floor(finalTimeLeft / 3600);
-                const minutes = Math.floor((finalTimeLeft % 3600) / 60);
-                const seconds = finalTimeLeft % 60;
-                
-                finalTimerElement.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-                
-                if (finalTimeLeft <= 0) {
-                    finalTimeLeft = 86400; // Reset to 24 hours
-                }
-            }, 1000);
-        }
-
-        // Cookie consent
-        function showCookieBanner() {
-            const banner = document.getElementById('cookie-banner');
-            const hasConsent = localStorage.getItem('cookie-consent');
-            
-            if (!hasConsent) {
-                setTimeout(() => {
-                    banner.style.transform = 'translateY(0)';
-                }, 2000);
-            }
-        }
-
-        function acceptCookies() {
-            localStorage.setItem('cookie-consent', 'accepted');
-            document.getElementById('cookie-banner').style.transform = 'translateY(100%)';
-            
-            // Initialize tracking
-            trackEvent('cookies_accepted', {
-                'event_category': 'Consent',
-                'event_label': 'Cookie Consent'
-            });
-        }
-
-        function declineCookies() {
-            localStorage.setItem('cookie-consent', 'declined');
-            document.getElementById('cookie-banner').style.transform = 'translateY(100%)';
-        }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // Close modals when clicking outside
-        document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('modal')) {
-                e.target.classList.remove('show');
-            }
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.querySelectorAll('.modal.show').forEach(modal => {
-                    modal.classList.remove('show');
-                });
-                
-                if (document.getElementById('exit-intent-overlay').classList.contains('show')) {
-                    closeExitIntent();
-                }
-            }
-            
-            if (e.key === 'Enter' && document.activeElement === urlInput) {
-                scanBtn.click();
-            }
-        });
-
-        // Add scroll-triggered animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all fade-in-up elements
-        document.querySelectorAll('.fade-in-up').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-            observer.observe(el);
-        });
-
-        // Form validation for URL input
-        urlInput.addEventListener('input', (e) => {
-            const url = e.target.value.trim();
-            hideError('url-error');
-            
-            if (url && !isValidUrl(url)) {
-                e.target.style.borderColor = '#ef4444';
-            } else {
-                e.target.style.borderColor = '#d1d5db';
-            }
-        });
-
-        // Performance monitoring
-        window.addEventListener('load', function() {
-            // Track page load time
-            const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-            trackEvent('page_load_time', {
-                'event_category': 'Performance',
-                'value': Math.round(loadTime)
-            });
-        });
-
-        // Error tracking
-        window.addEventListener('error', function(e) {
-            trackEvent('javascript_error', {
-                'event_category': 'Error',
-                'event_label': e.message,
-                'value': e.lineno
-            });
-        });
     </script>
 </body>
 </html>
